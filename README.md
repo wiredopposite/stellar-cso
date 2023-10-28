@@ -16,6 +16,13 @@ The world's most powerful add-on for the Original Xbox. StellarOS is the first c
 ```bash
 python3 ciso.py <ISO/XISO Path>
 ```
+To enable ISO scrubbing
+```bash
+python3 ciso.py -s <ISO/XISO Path>
+```
+```bash
+python3 ciso.py --scrub <ISO/XISO Path>
+```
 
 ## About
 
