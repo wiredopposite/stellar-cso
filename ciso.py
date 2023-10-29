@@ -51,8 +51,8 @@ def update_progress(progress):
 	sys.stdout.flush()
 
 def get_data_sectors(f, sector_offset):
-	# Based on xbox_shrinker https://github.com/Qubits01/xbox_shrinker
-	# and Repackinator https://github.com/Team-Resurgent/Repackinator
+    # Based on xbox_shrinker https://github.com/Qubits01/xbox_shrinker
+    # and Repackinator https://github.com/Team-Resurgent/Repackinator
 
     XISO_HEADER_SECTOR = 0x20 # 32
     XISO_ATTRIBUTE_DIRECTORY = 0x10
@@ -109,8 +109,8 @@ def get_data_sectors(f, sector_offset):
     return data_sectors
 
 def get_security_sectors(f, data_sectors, sector_offset):
-	# Based on xbox_shrinker https://github.com/Qubits01/xbox_shrinker
-	# and Repackinator https://github.com/Team-Resurgent/Repackinator
+    # Based on xbox_shrinker https://github.com/Qubits01/xbox_shrinker
+    # and Repackinator https://github.com/Team-Resurgent/Repackinator
 
     print("Indexing security sectors")
 
@@ -236,7 +236,7 @@ def compress_iso(infile, scrub):
 			# Get sectors from infile's directory table
 			data_sectors = get_data_sectors(fin, sector_offset)
 
-			# Trim to last data sector + 1 if that's less than infile size
+			# Trim to last data sector + 1 if that comes before last infile sector
 			ciso['total_blocks'] = min(max(data_sectors) + 1, total_infile_blocks) - sector_offset
 			ciso['total_bytes']  = ciso['total_blocks'] * XISO_SECTOR_SIZE
 
