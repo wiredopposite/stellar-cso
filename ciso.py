@@ -54,7 +54,7 @@ def get_data_sectors(f, sector_offset):
     # Based on xbox_shrinker https://github.com/Qubits01/xbox_shrinker
     # and Repackinator https://github.com/Team-Resurgent/Repackinator
 
-    XISO_HEADER_SECTOR = 0x20 # 32
+    XISO_HEADER_SECTOR = 0x20 # 32, not taking video partition into account
     XISO_ATTRIBUTE_DIRECTORY = 0x10
 
     print("Reading directory table")
