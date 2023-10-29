@@ -1,5 +1,3 @@
-<img src="resources/images/logo.png" align="right" />
-
 # Project Stellar CSO Compressor
 <p >
  <a href=""><img src="https://img.shields.io/discord/643467096906399804.svg" alt="Chat"></a>
@@ -8,18 +6,17 @@
  <a href="https://opensource.org/license/bsd-3-clause/"><img src="https://img.shields.io/github/license/MakeMHz/stellar-cso.svg?color=green" alt="License"></a>
 </p>
 
-> stellar (adj) - exceptionally good; outstanding.
-
-The world's most powerful add-on for the Original Xbox. StellarOS is the first completely legal re-implementation of the retail Xbox BIOS.
+I'll be using this repo to add features to the ciso script and flesh it out a bit more.
 
 ## Usage
 ```bash
 python3 ciso.py <ISO/XISO Path>
 ```
-To enable ISO scrubbing/trimming
+To enable ISO scrubbing/trimming:
 ```bash
 python3 ciso.py -s <ISO/XISO Path>
 ```
+or
 ```bash
 python3 ciso.py --scrub <ISO/XISO Path>
 ```
