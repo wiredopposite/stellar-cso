@@ -8,6 +8,10 @@
 
 I'll be using this repo to add features to the ciso script and flesh it out a bit more.
 
+## Added features
+- The ability to provide a directory path as an input argument, the script will process all .ISO files within that directory.
+- The ability to scrub ISO files, zeroes out padding sectors and makes compression of Redump images more efficient.
+
 ## Usage
 ```bash
 python3 ciso.py <ISO/XISO Path>
